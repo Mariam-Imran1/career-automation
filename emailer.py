@@ -35,9 +35,10 @@ def md_section(title, content, color):
 # Collect files
 summaries = sorted(glob.glob("reports/pipeline-summary-*.md"))
 summary = open(summaries[-1]).read() if summaries else "No pipeline summary found. The scan may still be running."
-cvs = sorted(glob.glob("output/*-cv.md"))
+cvs_pdf = sorted(glob.glob("output/*-cv.pdf"))
+cvs_md = sorted(glob.glob("output/*-cv.md"))
 answers = sorted(glob.glob("output/*-answers.md"))
-doc_count = len(cvs) + len(answers)
+doc_count = len(cvs_pdf) + len(answers)
 
 # Build HTML
 body = f"""<html><body style="font-family:Arial,sans-serif;max-width:700px;margin:auto;padding:24px;color:#333">
@@ -50,9 +51,9 @@ body = f"""<html><body style="font-family:Arial,sans-serif;max-width:700px;margi
 
 body += md_section("📊 Pipeline Summary", summary, "#1a1a2e")
 
-for cv in cvs:
+for cv in cvs_md:
     name = os.path.basename(cv).replace("-cv.md", "").replace("-", " ").title()
-    body += md_section(f"📄 Tailored Resume — {name}", open(cv).read(), "#2d6a4f")
+    body += md_section(f"📄 Tailored Resume — {name} (PDF attached)", open(cv).read(), "#2d6a4f")
 
 for ans in answers:
     name = os.path.basename(ans).replace("-answers.md", "").replace("-", " ").title()
@@ -69,7 +70,7 @@ body += """
 </body></html>"""
 
 plain = f"Daily Job Pipeline — {today}\n\n{summary}\n\n"
-for f in cvs + answers:
+for f in cvs_md + answers:
     plain += f"\n\n{'='*50}\n{os.path.basename(f)}\n{'='*50}\n" + open(f).read()
 
 # Build message
@@ -83,8 +84,16 @@ alt.attach(MIMEText(plain, "plain"))
 alt.attach(MIMEText(body, "html"))
 msg.attach(alt)
 
-# Attach all docs as files
-for f in cvs + answers:
+# Attach PDFs
+for f in cvs_pdf:
+    part = MIMEBase("application", "pdf")
+    part.set_payload(open(f, "rb").read())
+    encoders.encode_base64(part)
+    part.add_header("Content-Disposition", f'attachment; filename="{os.path.basename(f)}"')
+    msg.attach(part)
+
+# Attach answer sheets as markdown
+for f in answers:
     part = MIMEBase("application", "octet-stream")
     part.set_payload(open(f, "rb").read())
     encoders.encode_base64(part)
