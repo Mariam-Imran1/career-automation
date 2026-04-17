@@ -1,0 +1,70 @@
+# Career-Ops Profile Configuration
+
+candidate:
+  full_name: "Mariam Imran"
+  email: "mariamimrancareers@gmail.com"
+  phone: "+1-714-946-1965"
+  location: "Chicago, IL"
+  linkedin: "linkedin.com/in/mariam-imran"
+  github: "github.com/Mariam-Imran1"
+
+target_roles:
+  primary:
+    - "Product Marketing Manager"
+    - "Product Manager"
+    - "Associate Product Manager"
+    - "Product Marketing Intern"
+    - "Product Management Intern"
+  archetypes:
+    - name: "Product Marketing Manager"
+      level: "Early/Mid"
+      fit: "primary"
+    - name: "Product Manager"
+      level: "Early/Mid"
+      fit: "primary"
+    - name: "Associate Product Manager"
+      level: "Entry/Early"
+      fit: "primary"
+    - name: "Go-to-Market Strategist"
+      level: "Mid"
+      fit: "secondary"
+    - name: "Growth Marketing Manager"
+      level: "Mid"
+      fit: "secondary"
+    - name: "Product Marketing Intern"
+      level: "Internship"
+      fit: "primary"
+    - name: "Product Management Intern"
+      level: "Internship"
+      fit: "primary"
+
+narrative:
+  headline: "Product marketer with 7+ years driving GTM strategy across global FMCG and tech markets"
+  exit_story: "Built GTM strategy for AI-powered B2B products at Mingora Technologies after leading market insights at Coca-Cola across EMEA. Now pursuing MS in Marketing Analysis with AI concentration at DePaul University (STEM OPT eligible)."
+  superpowers:
+    - "End-to-end GTM strategy and product positioning"
+    - "Consumer and market research → actionable insights"
+    - "Lifecycle and growth marketing (email, LinkedIn, content)"
+    - "Cross-functional collaboration (product, sales, design)"
+    - "AI-powered product launches and seller enablement"
+  proof_points:
+    - name: "AI Insight Assistant Launch — Mingora Technologies"
+      hero_metric: "Reduced data query turnaround from hours to seconds"
+    - name: "Digital Engagement Growth — Mingora Technologies"
+      hero_metric: "180% engagement growth via lifecycle campaigns"
+    - name: "Revenue Growth — Mingora Technologies"
+      hero_metric: "9% revenue growth for partner brands"
+    - name: "Coca-Cola EMEA Market Share"
+      hero_metric: "1.5% market share gain across NARTD category"
+
+compensation:
+  target_range: "$60K-110K (full-time) / $20-30/hr (internship)"
+  currency: "USD"
+  minimum: "$50K full-time / $18/hr internship"
+  location_flexibility: "Hybrid or Remote, Chicago preferred"
+
+location:
+  country: "United States"
+  city: "Chicago"
+  timezone: "CST"
+  visa_status: "STEM OPT eligible (March 2027)"
