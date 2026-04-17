@@ -53,6 +53,32 @@ title_filter:
     - "Junior Product Manager"
     - "Product Analyst"
     - "Product Operations"
+  location_filter:
+    # Only keep roles in these locations (case-insensitive, partial match)
+    allowed:
+      - "United States"
+      - "USA"
+      - "US"
+      - "Remote"
+      - "New York"
+      - "Chicago"
+      - "San Francisco"
+      - "Seattle"
+      - "Austin"
+      - "Boston"
+      - "Los Angeles"
+      - "Denver"
+      - "Atlanta"
+      - "Miami"
+      - ", CA"
+      - ", NY"
+      - ", IL"
+      - ", TX"
+      - ", WA"
+      - "Remote - US"
+      - "Remote (US"
+      - "Nationwide"
+
   negative:
     # [CUSTOMIZE] Add keywords for roles you want to exclude
     - ".NET"
