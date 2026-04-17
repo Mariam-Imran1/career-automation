@@ -39,23 +39,27 @@ target_roles:
       fit: "primary"
 
 narrative:
-  headline: "Product marketer with 7+ years driving GTM strategy across global FMCG and tech markets"
-  exit_story: "Built GTM strategy for AI-powered B2B products at Mingora Technologies after leading market insights at Coca-Cola across EMEA. Now pursuing MS in Marketing Analysis with AI concentration at DePaul University (STEM OPT eligible)."
+  headline: "Product + marketing leader with 7+ years in GTM, AI product builds, and data-driven growth"
+  exit_story: "Built and shipped AI-powered products at Mingora Technologies, led market insights at Coca-Cola across 24 EMEA markets, and now building AI tools at DePaul (SAABIA multi-agent assistant, PathWise career platform). Pursuing MS in Marketing Analysis with AI concentration (STEM OPT eligible March 2027)."
   superpowers:
+    - "AI product building (Python, API integrations, multi-agent architecture)"
     - "End-to-end GTM strategy and product positioning"
-    - "Consumer and market research → actionable insights"
-    - "Lifecycle and growth marketing (email, LinkedIn, content)"
-    - "Cross-functional collaboration (product, sales, design)"
-    - "AI-powered product launches and seller enablement"
+    - "Data-driven growth: A/B testing, conversion funnels, Power BI, SQL"
+    - "Consumer and market research across 24 EMEA markets"
+    - "Founder mindset — built a DTC brand and nonprofit from zero"
   proof_points:
-    - name: "AI Insight Assistant Launch — Mingora Technologies"
-      hero_metric: "Reduced data query turnaround from hours to seconds"
+    - name: "AI Insight Assistant — Mingora Technologies"
+      hero_metric: "Cut reporting turnaround from 5 days to under 10 minutes for 15+ enterprise accounts"
     - name: "Digital Engagement Growth — Mingora Technologies"
-      hero_metric: "180% engagement growth via lifecycle campaigns"
+      hero_metric: "180% engagement growth via lifecycle campaigns and A/B testing"
     - name: "Revenue Growth — Mingora Technologies"
       hero_metric: "9% revenue growth for partner brands"
-    - name: "Coca-Cola EMEA Market Share"
-      hero_metric: "1.5% market share gain across NARTD category"
+    - name: "Coca-Cola EMEA Dashboards"
+      hero_metric: "Automated reporting across 24 markets; 1.5% market share gain"
+    - name: "SAABIA — AI Research Project, DePaul"
+      hero_metric: "Multi-agent AI assistant for student success (in progress)"
+    - name: "PathWise — AI Career Platform"
+      hero_metric: "AI-powered career navigation platform (pathwise.fit)"
 
 compensation:
   target_range: "$60K-110K (full-time) / $20-30/hr (internship)"
